@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -13,11 +12,15 @@
 <body class="bg-gray-200">
 <div class="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
   <div class="relative py-3 sm:max-w-xl sm:mx-auto  flex flex-col">
-    <div class="p-3 mx-auto">
-      <a href="" class="text-2xl uppercase font-bold text-indigo-900 ">Desktop version</a>
-    </div>
-    <div class="w-30 h-30 border rounded-3xl border-indigo-900 shadow">
-      <img class="rounded-3xl" src="https://dummyimage.com/600x300/22aacc/dedede&text=Desktop+version" />
+    <h2 class="text-4xl	text-center">Create a responsive image only with HTML</h2>
+    <p class="text-center">Read more about it <a class="text-pink-600" href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images">here</a></p>
+    <div class="mx-auto mt-2">
+      <picture>
+        <source media="(max-width: 400px)" srcset="https://dummyimage.com/200x300/ff9900/dedede&text=Mobile+version">
+        <source media="(max-width: 799px)" srcset="https://dummyimage.com/400x400/149e40/dedede&text=Tablet+version">
+        <source media="(min-width: 800px)" srcset="https://dummyimage.com/800x500/22aacc/dedede&text=Desktop+version">
+        <img class="rounded-3xl" src="https://dummyimage.com/600x500/22aacc/dedede&text=Desktop+version" alt="Chris standing up holding his daughter Elva">
+      </picture>
     </div>
     <div class="mt-2 mx-auto">
 	    <p class="font-mono uppercase text-indigo-700"> shayanypn </p>
